@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Khan Filling Station - Premium fuel services since 1972. Refined energy and trusted legacy for discerning customers.">
+    <title>Khan Filling Station | Premium Fuel Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Film Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-khan">KHAN</span>
+                <span class="logo-subtitle">FILLING STATION</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#sustainability">Sustainability</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#" class="contact-trigger">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <img src="assets/hero-bg.png" alt="Premium fuel service">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Powering Progress<br><span>Since 2025</span></h1>
+            <p class="hero-subtitle">Refined energy. Trusted legacy.</p>
+            <a href="#services" class="btn-ghost">Explore Our Standards</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-line"></span>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <div class="header-line"></div>
+            <h2 class="section-title">Our Fuel & Services</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="assets/service-1.png" alt="Premium Petrol">
+                </div>
+                <div class="service-overlay">
+                    <h3 class="service-name">Premium Petrol</h3>
+                    <p class="service-desc">Supreme quality refined fuel</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="assets/service-2.png" alt="Cleanest Diesel">
+                </div>
+                <div class="service-overlay">
+                    <h3 class="service-name">Cleanest Diesel</h3>
+                    <p class="service-desc">Ultra-refined, low-emission fuel</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="assets/service-3.png" alt="Pure Octane">
+                </div>
+                <div class="service-overlay">
+                    <h3 class="service-name">Pure Octane</h3>
+                    <p class="service-desc">Maximum performance, zero compromise</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="assets/service-4.png" alt="Convenience Store">
+                </div>
+                <div class="service-overlay">
+                    <h3 class="service-name">Convenience</h3>
+                    <p class="service-desc">Curated essentials & refreshments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Banner -->
+    <section class="sustainability" id="sustainability">
+        <div class="sustainability-background">
+            <img src="assets/sustainability-bg.png" alt="Sustainability commitment">
+        </div>
+        <div class="sustainability-content">
+            <h2 class="sustainability-title">Sustainability & Responsibility</h2>
+            <p class="sustainability-text">
+                Responsibility is not a trend.<br>
+                <strong>It is our obligation.</strong>
+            </p>
+            <div class="sustainability-line"></div>
+            <a href="https://www.facebook.com/share/17hKQG574U/?mibextid=wwXIfr" target="_blank" class="btn-ghost"
+                style="margin-top: 30px;">Find Us On Maps</a>
+        </div>
+    </section>
+
+    <!-- Station Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-header">
+            <div class="header-line"></div>
+            <h2 class="section-title">The Station Experience</h2>
+            <div class="header-line"></div>
+        </div>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="assets/experience-1.png" alt="Premium station canopy">
+                </div>
+                <div class="experience-label">
+                    <span>Architectural Excellence</span>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="assets/experience-2.png" alt="Professional attendant service">
+                </div>
+                <div class="experience-label">
+                    <span>Dedicated Service</span>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-image">
+                    <img src="assets/experience-3.png" alt="Luxury cafe and lounge">
+                </div>
+                <div class="experience-label">
+                    <span>The Lounge</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2 class="modal-title">Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="optional">(Optional)</span></label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <label for="body">Message</label>
+                    <textarea id="body" name="body" rows="4" required placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn-send">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-border"></div>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-emblem">
+                    <span class="emblem-k">K</span>
+                </div>
+                <span class="footer-brand">Khan Filling Station</span>
+            </div>
+            <nav class="footer-nav">
+                <a href="#services">About</a>
+                <span class="footer-divider">|</span>
+                <a href="#services">Services</a>
+                <span class="footer-divider">|</span>
+                <a href="#sustainability">Sustainability</a>
+                <span class="footer-divider">|</span>
+                <a href="#" class="contact-trigger">Contact</a>
+            </nav>
+            <p class="footer-copyright">© 2026 Khan Filling Station. All Rights Reserved.</p>
+            <p class="footer-credit">Created By <a href="https://muaz.pro" target="_blank">@MUAZ</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Fade in animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .experience-card, .sustainability-content').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('nav-open');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('nav-open');
+            });
+        });
+
+        // Contact Modal
+        const modal = document.getElementById('contactModal');
+        const modalClose = document.getElementById('modalClose');
+        const contactTriggers = document.querySelectorAll('.contact-trigger');
+        const contactForm = document.getElementById('contactForm');
+
+        contactTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('modal-open');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('modal-open');
+            document.body.style.overflow = '';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('modal-open');
+                document.body.style.overflow = '';
+            }
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+            modal.classList.remove('modal-open');
+            document.body.style.overflow = '';
+        });
+    </script>
+</body>
+
+</html>
