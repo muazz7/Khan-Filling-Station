@@ -131,7 +131,7 @@
         <div class="experience-grid">
             <div class="experience-card">
                 <div class="experience-image">
-                    <img src="assets/experience-1.png" alt="Premium station canopy">
+                    <img src="assets/experience-1.png?v=3" alt="Premium station canopy">
                 </div>
                 <div class="experience-label">
                     <span>Architectural Excellence</span>
@@ -234,8 +234,8 @@
 
         // Fade in animations on scroll
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -249,6 +249,19 @@
         document.querySelectorAll('.service-card, .experience-card, .sustainability-content').forEach(el => {
             el.classList.add('fade-in');
             observer.observe(el);
+        });
+
+        // Section header animations
+        const headerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.section-header').forEach(el => {
+            headerObserver.observe(el);
         });
 
         // Hamburger menu toggle
