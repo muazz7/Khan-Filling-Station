@@ -1067,15 +1067,9 @@ a {
     animation: gentleFloat 4s ease-in-out infinite;
 }
 
-/* Gold accent shimmer on hover */
-.btn-ghost:hover,
+/* Gold accent hover - simplified for stability */
 .btn-send:hover {
-    background: linear-gradient(90deg,
-            var(--color-accent-gold) 0%,
-            var(--color-accent-gold-light) 50%,
-            var(--color-accent-gold) 100%);
-    background-size: 200% auto;
-    animation: shimmer 2s linear infinite;
+    background: var(--color-accent-gold-light);
 }
 
 /* Refined Image Hover */
